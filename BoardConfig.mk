@@ -16,9 +16,7 @@
 
 BOARD_VENDOR := halium
 
-DEVICE_PATH := device/halium/halium_arm64
-
-include build/make/target/board/generic_arm64/BoardConfig.mk
+DEVICE_PATH := device/halium/halium
 
 TARGET_USES_64_BIT_BINDER := true
 
@@ -42,6 +40,7 @@ TARGET_USES_HWC2 := true
 
 # Filesystem
 TARGET_USERIMAGES_USE_EXT4 := true
+TARGET_USERIMAGES_USE_F2FS := true
 
 # HIDL
 DEVICE_FRAMEWORK_MANIFEST_FILE := $(DEVICE_PATH)/framework_manifest.xml
