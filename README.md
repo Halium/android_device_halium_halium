@@ -20,24 +20,25 @@ should run the following commands:
     repo init -u https://github.com/Halium/android -b halium-10.0 --depth=1
 
 A copy of this very repository will be created in
-`device/halium/halium_arm64/`; if you are interested in trying out a
+`device/halium/halium/`; if you are interested in trying out a
 modification or branch, apply your changes in the repo located in that
 directory before proceeding:
 
     # Get the required repositories for this specific build
-    ./halium/devices/setup halium_arm64
+    ./halium/devices/setup halium
 
     # Apply Halium patches to the Android source tree
     hybris-patches/apply-patches.sh --mb
 
     # Setup the build environment
-    source build/envsetup.sh && breakfast halium_arm64
+    source build/envsetup.sh && breakfast halium_arm64 # Or halium_arm32, depending on your requirements
 
     # Build the raw system image
     mka rawsystemimage
 
 After some time (depending on the machine you build on), the output will be in
-`out/target/product/halium_arm64/android-rootfs.img`.
+`out/target/product/halium_arm64/android-rootfs.img` or if you built halium_arm32,
+`out/target/product/halium_arm32/android-rootfs.img`
 
 You can replace the android-rootfs.img via ssh:
 
