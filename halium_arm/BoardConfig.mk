@@ -1,7 +1,7 @@
 -include device/halium/halium/BoardConfig.mk
 
 # Include Legacy GSI patches
-include build/make/target/board/generic_arm_ab/BoardConfig.mk
+include build/make/target/board/BoardConfigGsiCommon.mk
 
 # Architecture
 TARGET_ARCH := arm
