@@ -33,7 +33,8 @@ PRODUCT_PACKAGES += \
     init.gsi.rc \
     init.halium.rc \
     vndk-detect \
-    on-post-data.sh
+    on-post-data.sh \
+    vintf-stub.xml
 
 # bind mount target for property overrides
 PRODUCT_PACKAGES += \

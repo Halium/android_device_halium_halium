@@ -41,3 +41,11 @@ LOCAL_MODULE_TAGS  := optional
 LOCAL_MODULE_CLASS := EXECUTABLES
 LOCAL_SRC_FILES    := bin/on-post-data.sh
 include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE       := vintf-stub.xml
+LOCAL_MODULE_TAGS  := optional
+LOCAL_MODULE_CLASS := ETC
+LOCAL_SRC_FILES    := etc/vintf-stub.xml
+LOCAL_MODULE_PATH  := $(TARGET_OUT_ETC)/vintf/manifest
+include $(BUILD_PREBUILT)
