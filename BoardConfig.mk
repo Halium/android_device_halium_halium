@@ -60,6 +60,3 @@ BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 
 BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
-
-# Don't fail on VNDK ABI checks for stubs that we add (libselinux_stubs)
-TARGET_SKIP_CURRENT_VNDK := true
