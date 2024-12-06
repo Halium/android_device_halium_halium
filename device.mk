@@ -32,10 +32,10 @@ PRODUCT_PACKAGES += \
     init.disabled.rc \
     init.gsi.rc \
     init.halium.rc \
+    logd.halium.rc \
     vndk-detect \
     on-post-data.sh \
-    vintf-stub.xml \
-    logd.rc
+    vintf-stub.xml
 
 # bind mount target for property overrides
 PRODUCT_PACKAGES += \
