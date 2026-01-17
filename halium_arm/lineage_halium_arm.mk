@@ -1,3 +1,5 @@
+LOCAL_PATH := $(call my-dir)
+
 $(call inherit-product, $(LOCAL_PATH)/../lineage_halium.mk)
 # Inherit device
 $(call inherit-product, $(LOCAL_PATH)/../device.mk)
